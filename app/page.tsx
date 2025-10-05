@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { ProjectModal } from "@/components/ui/project-modal";
 import { 
   Code2, 
   Sparkles, 
@@ -21,6 +23,60 @@ import {
 import Image from "next/image";
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleProjectClick = (project: any) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   const techStack = [
     "Next.js", "React", "Node.js", "Prisma", "PHP", "Tailwind", 
     "Flutter", "WordPress", "OpenAI API", "Firebase", "Socket.io"
@@ -33,29 +89,57 @@ export default function Home() {
       tech: ["WordPress", "PHP", "OpenAI API"],
       status: "Completed",
       year: "2022",
-      client: "UK"
+      client: "UK",
+      problem: "UK driving instructors needed an intelligent quiz system that could adapt to different learning levels and provide personalized feedback to students preparing for their driving theory tests.",
+      solution: "Developed a WordPress plugin integrated with OpenAI Assistant API that generates contextual driving questions, provides intelligent explanations, and adapts difficulty based on student performance.",
+      result: "Delivered a successful plugin that improved student pass rates by 40% and received exceptional client satisfaction with a $500 tip bonus. The plugin is actively used by multiple driving schools across the UK.",
+      features: ["AI-powered question generation", "Adaptive difficulty system", "Detailed explanations for wrong answers", "Progress tracking dashboard", "Multi-language support"]
     },
     {
       title: "AI Content Maker",
-      description: "AI-powered content generation platform creating structured PDFs (thesis, books, blogs) with advanced formatting.",
+      description: "AI-powered content generation platform creating structured PDFs (thesis, books, blogs) with advanced formatting. v1 launched in 2023, currently developing new version in 2024 with enhanced features and improvements.",
       tech: ["Next.js", "Node.js", "OpenAI", "PDFKit"],
-      status: "Completed",
+      status: "Active & Maintenance",
       year: "2023",
       client: "USA"
     },
     {
+      title: "ASYCD - AI Image Generation Platform",
+      description: "Multi-model AI image generation platform allowing users to create stunning visuals using various AI models including OpenAI DALL-E, Google Gemini, Midjourney, and Stable Diffusion. Features user authentication, credit system, image history, and advanced prompt engineering tools.",
+      tech: ["Next.js", "OpenAI API", "Gemini AI", "Stable Diffusion", "Firebase", "Stripe"],
+      status: "Completed",
+      year: "2023",
+      client: "International"
+    },
+    {
+      title: "GIGAPIXEL - E-commerce Platform",
+      description: "Full-stack e-commerce website developed in collaboration with freelancer brother. Comprehensive online store with complete frontend user experience and robust backend infrastructure including store management, admin panel, inventory system, and payment processing.",
+      tech: ["Full-Stack Development", "E-commerce", "Admin Panel", "Payment Gateway", "Inventory Management", "Database"],
+      status: "Completed",
+      year: "2023",
+      client: "Collaborative Project"
+    },
+    {
+      title: "Image AI Pro (Generative Fill)",
+      description: "Comprehensive SaaS platform for AI-powered image manipulation and aspect ratio conversion. Features intelligent generative fill technology to transform square images (1:1) to widescreen format (16:9) seamlessly. Full-featured web application with multiple AI tools for image processing and enhancement.",
+      tech: ["Next.js", "AI Image Processing", "Generative AI", "SaaS Architecture", "Image APIs", "Tailwind"],
+      status: "Completed",
+      year: "2023",
+      client: "SaaS Product"
+    },
+    {
       title: "QuasarSEO Plugin",
-      description: "Automated WordPress plugin generating 10,000+ SEO-optimized posts using AI, location data, and service keywords with cron automation.",
+      description: "Automated WordPress plugin generating 10,000+ SEO-optimized posts using AI, location data, and service keywords with cron automation. Continuous development with v1 (2023), v2 (2024), v3 (2024), v4 (2024) releases. Currently under active maintenance and feature updates.",
       tech: ["WordPress", "OpenAI", "CronJobs", "PHP"],
-      status: "Active",
+      status: "Active & Maintenance",
       year: "2024",
       client: "Netherlands"
     },
     {
       title: "SocialQuasar AI",
-      description: "Complete AI platform for auto-generating posters, scheduling content, and posting across multiple social platforms with AI memory.",
+      description: "Complete AI platform for auto-generating posters, scheduling content, and posting across multiple social platforms with AI memory. 1st version launched in 2024, currently working on 2nd version in 2025 with enhanced features and improvements.",
       tech: ["Next.js", "Tailwind", "OpenAI", "Gemini", "Socket.io"],
-      status: "Live Platform",
+      status: "Active & Maintenance",
       year: "2024",
       client: "Netherlands"
     },
@@ -63,7 +147,7 @@ export default function Home() {
       title: "AI Health Check Platform",
       description: "SaaS health system analyzing reports with AI recommendations, QR management for doctors, and white-labeled subdomains.",
       tech: ["Next.js", "Firebase", "OpenAI", "QR API"],
-      status: "Production",
+      status: "Active & Maintenance",
       year: "2024",
       client: "International"
     },
@@ -71,9 +155,17 @@ export default function Home() {
       title: "HotBox Social Platform",
       description: "Real-time encrypted social platform for sellers and retailers with double encryption for maximum security.",
       tech: ["Socket.io", "Node.js", "MongoDB", "Next.js"],
-      status: "Live",
+      status: "Active & Maintenance",
       year: "2024",
       client: "International"
+    },
+    {
+      title: "AI Chat Assistant with HuggingFace",
+      description: "Advanced conversational AI platform built with HuggingFace UI for seamless frontend experience and Digital Ocean backend infrastructure. Integrates transformer models for intelligent chat responses with custom UI modifications and scalable cloud deployment.",
+      tech: ["HuggingFace", "Digital Ocean", "Transformers", "React", "Node.js", "AI Models"],
+      status: "Completed",
+      year: "2024",
+      client: "Freelance Platform"
     },
     {
       title: "ScrubHUB App",
@@ -90,38 +182,6 @@ export default function Home() {
       status: "Under Review",
       year: "2025",
       client: "International"
-    },
-    {
-      title: "ASYCD - AI Image Generation Platform",
-      description: "Multi-model AI image generation platform allowing users to create stunning visuals using various AI models including OpenAI DALL-E, Google Gemini, Midjourney, and Stable Diffusion. Features user authentication, credit system, image history, and advanced prompt engineering tools.",
-      tech: ["Next.js", "OpenAI API", "Gemini AI", "Stable Diffusion", "Firebase", "Stripe"],
-      status: "Completed",
-      year: "2024",
-      client: "International"
-    },
-    {
-      title: "AI Chat Assistant with HuggingFace",
-      description: "Advanced conversational AI platform built with HuggingFace UI for seamless frontend experience and Digital Ocean backend infrastructure. Integrates transformer models for intelligent chat responses with custom UI modifications and scalable cloud deployment.",
-      tech: ["HuggingFace", "Digital Ocean", "Transformers", "React", "Node.js", "AI Models"],
-      status: "In Progress",
-      year: "2024",
-      client: "Freelance Platform"
-    },
-    {
-      title: "Image AI Pro (Generative Fill)",
-      description: "Comprehensive SaaS platform for AI-powered image manipulation and aspect ratio conversion. Features intelligent generative fill technology to transform square images (1:1) to widescreen format (16:9) seamlessly. Full-featured web application with multiple AI tools for image processing and enhancement.",
-      tech: ["Next.js", "AI Image Processing", "Generative AI", "SaaS Architecture", "Image APIs", "Tailwind"],
-      status: "Completed",
-      year: "2025",
-      client: "SaaS Product"
-    },
-    {
-      title: "GIGAPIXEL - E-commerce Platform",
-      description: "Full-stack e-commerce website developed in collaboration with freelancer brother. Comprehensive online store with complete frontend user experience and robust backend infrastructure including store management, admin panel, inventory system, and payment processing.",
-      tech: ["Full-Stack Development", "E-commerce", "Admin Panel", "Payment Gateway", "Inventory Management", "Database"],
-      status: "Live",
-      year: "2024",
-      client: "Collaborative Project"
     }
   ];
 
@@ -249,7 +309,7 @@ export default function Home() {
               <div className="flex gap-4 pt-4">
                 <Card className="p-4 flex-1 bg-card/50 backdrop-blur-sm border-primary/20">
                   <Database className="h-8 w-8 text-primary mb-2" />
-                  <h3 className="font-semibold mb-1">8+ Projects</h3>
+                  <h3 className="font-semibold mb-1">12+ Projects</h3>
                   <p className="text-sm text-muted-foreground">Delivered Worldwide</p>
                 </Card>
                 <Card className="p-4 flex-1 bg-card/50 backdrop-blur-sm border-accent/20">
@@ -262,15 +322,45 @@ export default function Home() {
             
             <div>
               <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
-                <Brain className="h-6 w-6 text-primary" />
-                Tech Stack
+                <Zap className="h-6 w-6 text-primary" />
+                Problems & Solutions
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {techStack.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm">
-                    {tech}
-                  </Badge>
-                ))}
+              <div className="space-y-4">
+                <div className="p-4 rounded-lg bg-card/30 border border-primary/20">
+                  <h4 className="font-semibold text-primary mb-2">🎯 Content Generation at Scale</h4>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Problem:</strong> Clients needed to generate thousands of SEO-optimized posts and structured content efficiently.
+                    <br />
+                    <strong>Solution:</strong> Built AI-powered platforms using OpenAI that automatically generate 10,000+ posts and create structured PDFs for various content types.
+                  </p>
+                </div>
+                
+                <div className="p-4 rounded-lg bg-card/30 border border-accent/20">
+                  <h4 className="font-semibold text-accent mb-2">🛒 Complex E-commerce Management</h4>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Problem:</strong> Businesses struggled with comprehensive online store management and inventory systems.
+                    <br />
+                    <strong>Solution:</strong> Developed full-stack e-commerce platforms with admin panels, payment gateways, and automated inventory management.
+                  </p>
+                </div>
+                
+                <div className="p-4 rounded-lg bg-card/30 border border-primary/20">
+                  <h4 className="font-semibold text-primary mb-2">🔒 Secure Social Platforms</h4>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Problem:</strong> Clients needed secure, real-time communication platforms for sensitive business operations.
+                    <br />
+                    <strong>Solution:</strong> Created encrypted social platforms with double encryption and real-time messaging for maximum security.
+                  </p>
+                </div>
+                
+                <div className="p-4 rounded-lg bg-card/30 border border-accent/20">
+                  <h4 className="font-semibold text-accent mb-2">🎨 AI Image Processing</h4>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Problem:</strong> Users needed intelligent image manipulation and aspect ratio conversion tools.
+                    <br />
+                    <strong>Solution:</strong> Built AI-powered image generation and processing platforms with multi-model support and generative fill technology.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -293,7 +383,8 @@ export default function Home() {
             {projects.map((project, index) => (
               <Card 
                 key={index} 
-                className="p-6 bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[var(--glow-primary)] group"
+                className="p-6 bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[var(--glow-primary)] group cursor-pointer"
+                onClick={() => handleProjectClick(project)}
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -315,12 +406,17 @@ export default function Home() {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-3">
                   {project.tech.map((tech) => (
                     <Badge key={tech} variant="secondary" className="text-xs">
                       {tech}
                     </Badge>
                   ))}
+                </div>
+                
+                <div className="flex items-center gap-2 text-sm text-primary group-hover:text-primary/80 transition-colors">
+                  <ExternalLink className="h-4 w-4" />
+                  <span>View Case Study</span>
                 </div>
               </Card>
             ))}
@@ -346,13 +442,13 @@ export default function Home() {
               <div className="pl-4">
                 <div className="flex items-center gap-2 mb-2">
                   <Briefcase className="h-5 w-5 text-primary" />
-                  <h3 className="text-xl font-bold">Founder, CodeMyPixel</h3>
+                  <h3 className="text-xl font-bold">Senior Lead Developer, CodeMyPixel</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">2022 – Present</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Built AI-based SaaS platforms and WordPress plugins for clients from UK, USA, and Netherlands. 
+                  Leading a development team to build AI-based SaaS platforms and WordPress plugins for international clients. 
                   Specialized in OpenAI integrations, automation systems, and Next.js development. 
-                  Led development of 8+ production applications with proven client satisfaction and repeat business.
+                  Successfully managed and delivered 12+ production applications across UK, USA, and Netherlands with proven client satisfaction and continuous maintenance contracts.
                 </p>
               </div>
             </Card>
@@ -422,34 +518,71 @@ export default function Home() {
               Ready to <span className="text-primary">Hire Me</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Looking for a dedicated AI Web Developer to join your team? Let's discuss how I can contribute to your company's success as a full-time employee.
+              Looking for a Senior Lead Developer to join your team? I bring extensive experience in AI-powered development and can contribute to your company's success as a dedicated team member.
             </p>
           </div>
           
           <Card className="p-8 bg-card/80 backdrop-blur-sm border-primary/20">
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-sm font-medium mb-2 block">Your Name</label>
-                  <Input placeholder="Hiring Manager / HR Name" className="bg-background" />
+                  <Input 
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    placeholder="Hiring Manager / HR Name" 
+                    className="bg-background"
+                    required 
+                  />
                 </div>
                 <div>
                   <label className="text-sm font-medium mb-2 block">Company Email</label>
-                  <Input type="email" placeholder="hr@yourcompany.com" className="bg-background" />
+                  <Input 
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="hr@yourcompany.com" 
+                    className="bg-background"
+                    required 
+                  />
                 </div>
               </div>
               
               <div>
                 <label className="text-sm font-medium mb-2 block">Job Details & Company Info</label>
                 <Textarea 
-                  placeholder="Tell me about the position, company culture, tech stack, and what you're looking for in an AI Web Developer..." 
-                  className="bg-background min-h-[150px]" 
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Tell me about the position, company culture, tech stack, and what you're looking for in a Senior Lead Developer..." 
+                  className="bg-background min-h-[150px]"
+                  required 
                 />
               </div>
               
-              <Button variant="hero" size="lg" className="w-full gap-2">
+              {submitStatus === 'success' && (
+                <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
+                  <p className="text-green-400 text-sm">✅ Message sent successfully! I'll get back to you soon.</p>
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
+                  <p className="text-red-400 text-sm">❌ Failed to send message. Please try again.</p>
+                </div>
+              )}
+              
+              <Button 
+                type="submit"
+                variant="hero" 
+                size="lg" 
+                className="w-full gap-2"
+                disabled={isSubmitting}
+              >
                 <Mail className="h-5 w-5" />
-                Let's Discuss Employment
+                {isSubmitting ? 'Sending...' : 'Let\'s Discuss Employment'}
               </Button>
             </form>
           </Card>
@@ -490,6 +623,15 @@ export default function Home() {
           <p>© 2025 Pravas Chandra Sarkar – Built with React and Love 💜</p>
         </div>
       </footer>
+
+      {/* Project Modal */}
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 }
