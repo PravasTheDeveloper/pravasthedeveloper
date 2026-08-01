@@ -18,6 +18,8 @@ interface ProjectModalProps {
     solution?: string;
     result?: string;
     features?: string[];
+    liveUrl?: string;
+    category?: string;
   };
   isOpen: boolean;
   onClose: () => void;
@@ -140,18 +142,30 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
           </div>
 
           {/* CTA */}
-          <div className="text-center pt-4">
-            <p className="text-muted-foreground mb-4">
+          <div className="text-center pt-4 space-y-4">
+            {project.liveUrl && (
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-block w-full">
+                <Button
+                  variant="neon"
+                  size="lg"
+                  className="gap-2 w-full"
+                >
+                  <ExternalLink className="h-5 w-5" />
+                  View Live Demo
+                </Button>
+              </a>
+            )}
+            <p className="text-muted-foreground">
               Interested in similar solutions for your business?
             </p>
-            <Button 
-              variant="hero" 
-              size="lg" 
+            <Button
+              variant="hero"
+              size="lg"
               className="gap-2"
               onClick={() => {
                 onClose();
-                document.getElementById('contact-section')?.scrollIntoView({ 
-                  behavior: 'smooth' 
+                document.getElementById('contact-section')?.scrollIntoView({
+                  behavior: 'smooth'
                 });
               }}
             >
