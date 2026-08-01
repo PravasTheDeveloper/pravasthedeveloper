@@ -432,7 +432,7 @@ export default function Home() {
                  className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="mailto:info.pravas.chsa@gmail.com"
+              <a href="mailto:info.pravas.cs@gmail.com"
                  className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-6 w-6" />
               </a>
@@ -722,7 +722,7 @@ export default function Home() {
             <Card className="p-4 bg-card/50 backdrop-blur-sm border-primary/20 text-center">
               <Mail className="h-6 w-6 text-primary mx-auto mb-2" />
               <h3 className="font-semibold text-sm">Direct Email</h3>
-              <p className="text-xs text-muted-foreground mt-1">info.pravas.chsa@gmail.com</p>
+              <p className="text-xs text-muted-foreground mt-1">info.pravas.cs@gmail.com</p>
             </Card>
           </div>
 
@@ -774,7 +774,7 @@ export default function Home() {
 
               {submitStatus === 'error' && (
                 <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
-                  <p className="text-red-400 text-sm">❌ Failed to send message. Please email me directly at info.pravas.chsa@gmail.com</p>
+                  <p className="text-red-400 text-sm">❌ Failed to send message. Please email me directly at info.pravas.cs@gmail.com</p>
                 </div>
               )}
 
@@ -811,7 +811,7 @@ export default function Home() {
               <span>LinkedIn</span>
             </a>
             <a
-              href="mailto:info.pravas.chsa@gmail.com"
+              href="mailto:info.pravas.cs@gmail.com"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
