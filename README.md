@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:DB2777,100:2563EB&height=220&section=header&text=Pravas%20Chandra%20Sarkar&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Product%20Engineer%20•%20Next.js%20%2B%20OpenAI%20%2B%20Automation&descSize=18&descColor=a78bfa&descAlignY=58&stroke=00000000&strokeWidth=0" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:DB2777,100:2563EB&height=220&section=header&text=Pravas%20Chandra%20Sarkar&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Product%20Engineer%20%E2%80%A2%20Next.js%20%2B%20OpenAI%20%2B%20Automation&descSize=18&descColor=a78bfa&descAlignY=58&stroke=00000000&strokeWidth=0" />
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
@@ -29,7 +29,7 @@
 ---
 
 <!-- About Section -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" width="35" height="35" /> About Me
+## 👨‍💻 About Me
 
 ```yaml
 name: Pravas Chandra Sarkar
@@ -50,7 +50,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 ---
 
 <!-- Quasar Ecosystem -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" width="30" height="30" /> Quasar SaaS Ecosystem
+## 🚀 Quasar SaaS Ecosystem
 
 > 5 interconnected AI products covering the entire growth stack — social, leads, SEO, project management, and LinkedIn automation.
 
@@ -58,7 +58,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 <tr>
 <td align="center" width="33%">
 
-### <a href="https://socialquasar.com/">SocialQuasar</a>
+### 📱 [SocialQuasar](https://socialquasar.com/)
 <img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" />
 <br/>
 <sub>AI social media content automation. Auto-generate posters, schedule & post across platforms with AI memory.</sub>
@@ -66,7 +66,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 </td>
 <td align="center" width="33%">
 
-### <a href="https://www.quasarleads.com/">QuasarLeads</a>
+### 🎯 [QuasarLeads](https://www.quasarleads.com/)
 <img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" />
 <br/>
 <sub>AI lead generation + email automation. Find, enrich, and nurture leads at scale.</sub>
@@ -74,7 +74,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 </td>
 <td align="center" width="33%">
 
-### <a href="https://seo.quasarasoft.com/">QuasarAISEO</a>
+### 🔍 [QuasarAISEO](https://seo.quasarasoft.com/)
 <img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" />
 <br/>
 <sub>SEO + AI search visibility. Win across Google, ChatGPT, and Perplexity.</sub>
@@ -84,7 +84,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 <tr>
 <td align="center" width="33%">
 
-### <a href="https://quasar-flow-ai.vercel.app/">QuasarFlow</a>
+### 📊 [QuasarFlow](https://quasar-flow-ai.vercel.app/)
 <img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" />
 <br/>
 <sub>AI project management ecosystem. Bridges clients, executives & teams with autonomous AI.</sub>
@@ -92,7 +92,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 </td>
 <td align="center" width="33%">
 
-### <a href="https://qllnkagent.vercel.app/">Quasar Agent</a>
+### 🤝 [Quasar Agent](https://qllnkagent.vercel.app/)
 <img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" />
 <br/>
 <sub>LinkedIn automation + analytics. Monitor outreach campaigns with AI-driven engagement.</sub>
@@ -100,7 +100,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 </td>
 <td align="center" width="33%">
 
-### More Products ↓
+### 🛠️ More Products ↓
 <img src="https://img.shields.io/badge/See_Below-AI_Products-7C3AED?style=flat-square" />
 <br/>
 <sub>LexClaro, Vocale, and more domain-specific AI platforms.</sub>
@@ -112,13 +112,13 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 ---
 
 <!-- Other AI Products -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" width="30" height="30" /> AI SaaS Products
+## ⚖️ AI SaaS Products
 
 <table>
 <tr>
 <td align="center" width="50%">
 
-### <a href="https://app.lexclaro.com/">LexClaro — AI Legal Assistant</a>
+### ⚖️ [LexClaro — AI Legal Assistant](https://app.lexclaro.com/)
 <img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" /> <img src="https://img.shields.io/badge/Stack-Next.js%20%2B%20OpenAI-7C3AED?style=flat-square" />
 
 <sub>AI legal assistant that simplifies legal documents in seconds. Dual portals: client app + lawyer portal.</sub>
@@ -126,8 +126,8 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 </td>
 <td align="center" width="50%">
 
-### <a href="https://vocale.baxsrl.cloud/">Vocale — AI Voice Agents</a>
-<img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" /> <img src="https://img.shields.io/badge/Client-Italy_%F0%9F%87%AE%F0%9F%87%B9-DB2777?style=flat-square" />
+### 🎙️ [Vocale — AI Voice Agents](https://vocale.baxsrl.cloud/)
+<img src="https://img.shields.io/badge/Status-Live-22c55e?style=flat-square" /> <img src="https://img.shields.io/badge/Client-Italy-DB2777?style=flat-square" />
 
 <sub>AI voice agent platform. Handle calls, bookings & customer interactions with autonomous AI voice agents.</sub>
 
@@ -138,7 +138,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 ---
 
 <!-- Tech Stack -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Pick.png" width="30" height="30" /> Tech Stack
+## 🛠️ Tech Stack
 
 <div align="center">
 
@@ -174,7 +174,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 ---
 
 <!-- GitHub Stats -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="30" height="30" /> GitHub Stats
+## 📊 GitHub Stats
 
 <div align="center">
 
@@ -184,25 +184,24 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 <br/>
 
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PravasTheDeveloper&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&text_color=c4b5fd" />
-<img height="170" src="https://github-readme-activity-graph.vercel.app/graph?username=PravasTheDeveloper&theme=tokyo-night&hide_border=true&bg_color=00000000&color=7C3AED&line=DB2777&point=2563EB" />
 
 </div>
 
 ---
 
 <!-- Trophies -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Trophy.png" width="30" height="30" /> Achievements
+## 🏆 Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=PravasTheDeveloper&theme=algolia&no-frame=true&no-bg=true&column=7&row=1" />
+  <img src="https://github-profile-trophy.vercel.app/?username=PravasTheDeveloper&theme=algolia&no-frame=true&no-bg=true&column=7&row=1&margin-w=15&margin-h=15" />
 </div>
 
----
-
-<!-- Featured Projects -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pushpin.png" width="30" height="30" /> Featured Projects
+<br/>
 
 <div align="center">
+
+<!-- Featured Projects -->
+## 📌 Featured Projects
 
 <a href="https://github.com/PravasTheDeveloper/pravasthedeveloper">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=pravasthedeveloper&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
@@ -210,6 +209,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 <a href="https://github.com/PravasTheDeveloper/Development-of-an-AI--and-IoT-Based">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=Development-of-an-AI--and-IoT-Based&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
 </a>
+<br/>
 <a href="https://github.com/PravasTheDeveloper/imageaipro">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=imageaipro&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
 </a>
@@ -222,11 +222,11 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 ---
 
 <!-- Visitor Counter -->
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Eyes.png" width="30" height="30" /> Visitors
+## 👀 Visitors
 
 <div align="center">
 
-<img src="https://komarev.com/visitor-badge.glitch.me?username=PravasTheDeveloper&color=7C3AED&style=for-the-badge&label=Profile+Visitors" />
+<img src="https://visitcount.itsvg.in/api?id=PravasTheDeveloper&label=Profile%20Visitors&color=7C3AED&icon=github&style=for-the-badge" />
 
 </div>
 
