@@ -173,66 +173,95 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 
 ---
 
-<!-- GitHub Stats -->
-## 📊 GitHub Stats
+<!-- Stats - Using shields.io static badges (100% reliable) -->
+## 📊 Quick Stats
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=PravasTheDeveloper&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=PravasTheDeveloper&theme=tokyonight&hide_border=true&background=00000000&ring=7C3AED&fire=DB2777&currStreakLabel=c4b5fd" />
-
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/Apps_Shipped-20%2B-22c55e?style=for-the-badge" />
 <br/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PravasTheDeveloper&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&text_color=c4b5fd" />
+<sub>Production & Live</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/Countries-3-f59e0b?style=for-the-badge" />
+<br/>
+<sub>UK • USA • Netherlands</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/AI_Posts-10K%2B-ec4899?style=for-the-badge" />
+<br/>
+<sub>Auto-generated</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/Quasar_Products-5-7C3AED?style=for-the-badge" />
+<br/>
+<sub>Full SaaS ecosystem</sub>
+</td>
+</tr>
+</table>
 
 </div>
 
 ---
-
-<!-- Trophies -->
-## 🏆 Achievements
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=PravasTheDeveloper&theme=algolia&no-frame=true&no-bg=true&column=7&row=1&margin-w=15&margin-h=15" />
-</div>
-
-<br/>
-
-<div align="center">
 
 <!-- Featured Projects -->
 ## 📌 Featured Projects
 
-<a href="https://github.com/PravasTheDeveloper/pravasthedeveloper">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=pravasthedeveloper&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
-</a>
-<a href="https://github.com/PravasTheDeveloper/Development-of-an-AI--and-IoT-Based">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=Development-of-an-AI--and-IoT-Based&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
-</a>
-<br/>
-<a href="https://github.com/PravasTheDeveloper/imageaipro">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=imageaipro&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
-</a>
-<a href="https://github.com/PravasTheDeveloper/PixelPlanner">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=PravasTheDeveloper&repo=PixelPlanner&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=7C3AED&icon_color=DB2777&text_color=c4b5fd" />
-</a>
-
-</div>
-
----
-
-<!-- Visitor Counter -->
-## 👀 Visitors
-
 <div align="center">
 
-<img src="https://visitcount.itsvg.in/api?id=PravasTheDeveloper&label=Profile%20Visitors&color=7C3AED&icon=github&style=for-the-badge" />
+<table>
+<tr>
+<td align="center" width="50%">
+
+### 🌐 [pravasthedeveloper](https://github.com/PravasTheDeveloper/pravasthedeveloper)
+<img src="https://img.shields.io/badge/Type-Portfolio-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Stack-Next.js%2015%20%2B%20TypeScript-2563EB?style=flat-square" />
+<br/>
+<sub>AI Product Engineer portfolio — 20+ projects, case studies, Quasar ecosystem showcase.</sub>
+
+</td>
+<td align="center" width="50%">
+
+### 🤖 [AI + IoT Lab Monitoring](https://github.com/PravasTheDeveloper/Development-of-an-AI--and-IoT-Based)
+<img src="https://img.shields.io/badge/Type-Thesis_Project-DB2777?style=flat-square" />
+<img src="https://img.shields.io/badge/Stack-AI%20%2B%20IoT%20%2B%20Sensors-22c55e?style=flat-square" />
+<br/>
+<sub>AI & IoT system for comprehensive lab environmental and hazard monitoring with automated action.</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+
+### 🎨 [ImageAIPro](https://github.com/PravasTheDeveloper/imageaipro)
+<img src="https://img.shields.io/badge/Type-SaaS_Product-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Stack-Next.js%20%2B%20AI%20Image%20Processing-ec4899?style=flat-square" />
+<br/>
+<sub>AI-powered image manipulation SaaS with generative fill for 1:1 to 16:9 conversion.</sub>
+
+</td>
+<td align="center" width="50%">
+
+### 📋 [PixelPlanner](https://github.com/PravasTheDeveloper/PixelPlanner)
+<img src="https://img.shields.io/badge/Type-Productivity_Tool-DB2777?style=flat-square" />
+<img src="https://img.shields.io/badge/Stack-Next.js%20%2B%20Collaboration-2563EB?style=flat-square" />
+<br/>
+<sub>Collaborative productivity tool for developers — Notion-inspired, built for coding & pixel projects.</sub>
+
+</td>
+</tr>
+</table>
 
 </div>
 
 ---
 
 <!-- Snake Animation -->
+## 🐍 Contribution Snake
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PravasTheDeveloper/PravasTheDeveloper/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PravasTheDeveloper/PravasTheDeveloper/output/github-snake.svg" />
@@ -242,6 +271,17 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 ---
 
 <div align="center">
+
+<!-- Connect -->
+## 🤝 Let's Connect
+
+<a href="https://pravasthedeveloper.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-pravasthedeveloper.vercel.app-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<br/><br/>
+<a href="https://www.linkedin.com/in/pravaschandrasarkar/"><img src="https://img.shields.io/badge/LinkedIn-Pravas_Chandra_Sarkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<br/><br/>
+<a href="mailto:info.pravas.chsa@gmail.com"><img src="https://img.shields.io/badge/Email-info.pravas.chsa@gmail.com-D14857?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+
+<br/><br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:DB2777,100:2563EB&height=120&section=footer" />
 
