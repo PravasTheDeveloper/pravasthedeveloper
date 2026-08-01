@@ -1,92 +1,81 @@
-# Pravas Chandra Sarkar - AI Web Developer Portfolio
+# Hi, I'm Pravas Chandra Sarkar 👋
 
-A modern, responsive portfolio website showcasing AI-powered web development expertise, built with Next.js 15 and TypeScript.
+**AI Product Engineer** building production SaaS ecosystems, automation platforms, and AI-powered applications.
 
-## 🚀 Features
-
-- **Modern Design**: Dark theme with gradient animations and glassmorphism effects
-- **Responsive Layout**: Optimized for all devices and screen sizes
-- **Performance Optimized**: Built with Next.js 15 for optimal loading speeds
-- **Type Safe**: Full TypeScript implementation
-- **Component Library**: Built with shadcn/ui components
-- **Animations**: Smooth transitions and hover effects
-- **SEO Optimized**: Proper meta tags and structured data
-
-## 🛠️ Tech Stack
-
-- **Framework**: Next.js 15
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Components**: shadcn/ui
-- **Icons**: Lucide React
-- **Build Tool**: Next.js built-in bundler
-
-## 📁 Project Structure
-
-```
-pravasthedeveloper/
-├── app/                    # Next.js app directory
-│   ├── globals.css        # Global styles and CSS variables
-│   ├── layout.tsx         # Root layout with metadata
-│   └── page.tsx           # Main portfolio page
-├── components/ui/         # shadcn/ui components
-├── hooks/                 # Custom React hooks
-├── lib/                   # Utility functions
-├── public/               # Static assets
-└── tailwind.config.ts    # Tailwind configuration
-```
-
-## 🎨 Sections
-
-- **Hero**: Animated introduction with call-to-action buttons
-- **About**: Professional summary and statistics
-- **Projects**: Featured portfolio projects with tech stacks
-- **Experience**: Professional journey timeline
-- **Skills**: Technical expertise categorized by domain
-- **Contact**: Contact form and social links
-
-## 🚀 Getting Started
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Run development server**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Open in browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## 📦 Build & Deploy
-
-1. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
-2. **Start production server**:
-   ```bash
-   npm start
-   ```
-
-3. **Deploy**: 
-   - Deploy to Vercel, Netlify, or any platform supporting Next.js
-   - All static assets are optimized for production
-
-## 🎯 Customization
-
-- **Content**: Update project data, skills, and experience in `app/page.tsx`
-- **Styling**: Modify design system variables in `app/globals.css`
-- **Components**: Extend or customize UI components in `components/ui/`
-- **Assets**: Replace images in `public/` directory
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+📍 Dhaka, Bangladesh (GMT+6) · 🕐 Open to remote roles worldwide · 📧 info.pravas.chsa@gmail.com
 
 ---
 
-**Built with ❤️ by Pravas Chandra Sarkar**
+## What I Do
+
+I build **production AI systems, not demos**. Over the past 3+ years, I've designed and shipped:
+
+- **20+ production applications** for clients across the UK, USA, and Netherlands
+- **A full SaaS ecosystem (Quasar)** — 5 interconnected products covering social, leads, SEO, project management, and LinkedIn automation
+- **Domain-specific AI products** — legal AI (LexClaro), voice agents (Vocale), health check, and more
+- **AI content platforms** generating 10,000+ posts and structured PDFs automatically
+
+## Quasar SaaS Ecosystem
+
+| Product | What it does | Live |
+|---------|-------------|------|
+| **SocialQuasar** | AI social media content automation | [socialquasar.com](https://socialquasar.com/) |
+| **QuasarLeads** | AI lead generation + email automation | [quasarleads.com](https://www.quasarleads.com/) |
+| **QuasarAISEO** | SEO + AI search visibility platform | [seo.quasarasoft.com](https://seo.quasarasoft.com/) |
+| **QuasarFlow** | AI project management ecosystem | [quasar-flow-ai.vercel.app](https://quasar-flow-ai.vercel.app/) |
+| **Quasar Agent** | LinkedIn automation + analytics | [qllnkagent.vercel.app](https://qllnkagent.vercel.app/) |
+
+## Other AI Products
+
+| Product | What it does | Live |
+|---------|-------------|------|
+| **LexClaro** | AI legal assistant (client + lawyer portals) | [app.lexclaro.com](https://app.lexclaro.com/) |
+| **Vocale** | AI voice agent platform | [vocale.baxsrl.cloud](https://vocale.baxsrl.cloud/) |
+
+## Tech Stack
+
+```
+Frontend:  Next.js · React · TypeScript · Tailwind CSS · Flutter
+Backend:   Node.js · PHP · Prisma · Firebase · Socket.io
+AI/ML:     OpenAI API · Gemini · HuggingFace · TensorFlow · LangChain
+CMS:       WordPress (Plugin Development · Custom Themes)
+DevOps:    Vercel · Docker · Firebase Hosting · Digital Ocean
+```
+
+## Connect
+
+- **Portfolio**: [pravasthedeveloper.vercel.app](https://pravasthedeveloper.vercel.app/)
+- **LinkedIn**: [linkedin.com/in/pravaschandrasarkar](https://www.linkedin.com/in/pravaschandrasarkar/)
+- **GitHub**: [github.com/PravasTheDeveloper](https://github.com/PravasTheDeveloper)
+- **Email**: info.pravas.chsa@gmail.com
+
+---
+
+## About This Repo
+
+This is my personal portfolio website — a Next.js 15 + TypeScript app showcasing my projects, case studies, and experience.
+
+### Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+### Build
+
+```bash
+npm run build
+npm start
+```
+
+### Tech
+
+- Next.js 15 · TypeScript · Tailwind CSS · shadcn/ui · Lucide React
+- Deployed on Vercel
+
+---
+
+**Built with Next.js by Pravas Chandra Sarkar**
