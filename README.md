@@ -22,7 +22,7 @@
 <!-- Social Links -->
 <a href="https://pravasthedeveloper.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-%F0%9F%9A%80_Visit-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/pravaschandrasarkar/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:info.pravas.chsa@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-D14857?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:info.pravas.cs@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-D14857?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 </div>
 
@@ -40,7 +40,7 @@ availability: Full-time, Remote
 focus: Building production AI systems, not demos
 experience: 3+ years shipping SaaS & AI products
 clients: UK • USA • Netherlands
-email: info.pravas.chsa@gmail.com
+email: info.pravas.cs@gmail.com
 ```
 
 <br/>
@@ -279,7 +279,7 @@ I build **production AI systems** — not demos. I've designed and shipped a ful
 <br/><br/>
 <a href="https://www.linkedin.com/in/pravaschandrasarkar/"><img src="https://img.shields.io/badge/LinkedIn-Pravas_Chandra_Sarkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <br/><br/>
-<a href="mailto:info.pravas.chsa@gmail.com"><img src="https://img.shields.io/badge/Email-info.pravas.chsa@gmail.com-D14857?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:info.pravas.cs@gmail.com"><img src="https://img.shields.io/badge/Email-info.pravas.cs@gmail.com-D14857?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 <br/><br/>
 
